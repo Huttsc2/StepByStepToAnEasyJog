@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Шаг за шагом к легкой пробежке</title>
+    <style>
+        body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #F5F6FB;
+  }
+
+  h1 {
+    font-size: 56px;
+    font-kerning: auto;
+    line-height: 56px;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-kerning: auto;
+    line-height: 32px;
+  }
+
+  p {
+    font-size: 24px;
+    font-kerning: auto;
+  }
+
+  /*стиль первой кнопки */
+  button {
+    background-color: #007BFC;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #124FFD;
+  }
+
+  /*стиль второй кнопки */
+  .second_button {
+    width: 100%;
+    background-color: #007BFC;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-top: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+
+  .second_button:hover {
+    background-color: #124FFD;
+    
+  }
+
+  
+  .second_button:disabled {
+    background-color: #F5F6FB;
+    color: #171717;
+  }
+
+
+  /*стиль верхнего контейнера */
+  .container_header {
+    display: flex;
+    justify-content: center; /* Выравнивание по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+    width: 800px;
+    border-radius: 32px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 64px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+  /*стиль главного контейнера */
+  .container {
+    justify-content: center; /* Выравнивание по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+    width: 800px;
+    border-radius: 32px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 32px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+}
+
+
+/*стиль блоков, которые находятся внутри главного контейнера */
+.i_want_run {
+   padding-top: 32px;
+   padding-bottom: 32px;
+}  
+
+
+/*стиль контейнера с тренировками */
+.training {
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  width: 800px;
+  border-radius: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-bottom: 32px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF;
+}
+
+
+  /* Скрываем оригинальные radio-кнопки */
+  input[type="radio"] {
+    display: none;
+}
+
+/* Стилизация для label-элементов, которые будут выглядеть как кнопки */
+label.radio-button {
+    display: inline-block;
+    padding: 8px 40px;
+    margin: 4px;
+    font-size: 16px;
+    color: #171717;
+    background-color: #EDF1FA;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+/* Стилизация для выбранных (checked) radio-кнопок */
+input[type="radio"]:checked + label.radio-button {
+    background-color: #007BFC;
+    color: #FFFFFF;
+}
+
+
+
+
+
+/*настройки ползунка */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 100%; 
+    height: 10px; 
+    background-color: #EDF1FA; 
+    border: none; 
+    outline: none; /* Убираем контур вокруг ползунка */
+    border-radius: 5px; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Стилизация заполненной части ползунка */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Убираем стандартные стили для WebKit браузеров */
+    appearance: none; /* Убираем стандартные стили для не-WebKit браузеров */
+    width: 20px; 
+    height: 60px; 
+    background-color: #007BFC; 
+    border: none; 
+    border-radius: 10px; 
+    
+}
+    </style>
+</head>
+<body>
+
+    <div class="container_header">
+        <div><h1> Шаг за шагом <br> к легкой пробежке</h1>
+            <p>Получи бесплатный план тренировок, <br> чтобы соревнования стали для тебя легкой прогулкой.</p>
+            <a href="#my-section">
+            <button>Рассчитать программу</button>
+            </a>
+        </div>
+        <div>
+            <img src="photo_running.jpg" alt="Running people" width="300" height="300">
+        </div>
+    </div>
+
+     <div class="container" id="my-section">
+
+        <span class="centered-element">
+
+            <div class="i_want_run">
+                <h2>Я хочу пробежать:</h2>
+
+                        <input type="radio" id="option1_group1" name="group1" value="800 м">
+                        <label for="option1_group1" class="radio-button">800 м</label>
+                        
+                        <input type="radio" id="option2_group1" name="group1" value="1500 м">
+                        <label for="option2_group1" class="radio-button">1500 м</label>
+                        
+                        <input type="radio" id="option3_group1" name="group1" value="3000 м">
+                        <label for="option3_group1" class="radio-button">3000 м</label>
+                        
+                        <input type="radio" id="option4_group1" name="group1" value="5000 м">
+                        <label for="option4_group1" class="radio-button">5000 м</label><br>
+                        
+                        <input type="radio" id="option5_group1" name="group1" value="10 000 м">
+                        <label for="option5_group1" class="radio-button">10 000 м</label>
+                        
+                        <input type="radio" id="option6_group1" name="group1" value="21,1 км">
+                        <label for="option6_group1" class="radio-button">21,1 км</label>
+                        
+                        <input type="radio" id="option7_group1" name="group1" value="42,2 км">
+                        <label for="option7_group1" class="radio-button">42,2 км</label>
+
+            </div>
+
+            <div class="i_want_run">
+                    <h2>До соревнований осталось:</h2>
+
+                        <label=slider for="slider">Недель:</label>
+                        <output id="sliderValue">1</output></br>
+
+                        <input type="range" min="1" max="24" value="1" step="1" id="slider">
+
+                        
+             </div>           
+
+             <div class="i_want_run">
+                    <h2>Я уже бегал ранее:</h2>
+                        
+                        <input type="radio" id="option1_group2" name="group2" value="1500 м">
+                        <label for="option1_group2" class="radio-button">1500 м</label>
+                        
+                        <input type="radio" id="option2_group2" name="group2" value="3000 м">
+                        <label for="option2_group2" class="radio-button">3000 м</label>
+                        
+                        <input type="radio" id="option3_group2" name="group2" value="5000 м">
+                        <label for="option3_group2" class="radio-button">5000 м</label>
+                        
+                        <input type="radio" id="option4_group2" name="group2" value="10 000 м">
+                        <label for="option4_group2" class="radio-button">10 000 м</label><br>
+                        
+                        <input type="radio" id="option5_group2" name="group2" value="21,1 км">
+                        <label for="option5_group2" class="radio-button">21,1 км</label>
+                        
+                        <input type="radio" id="option6_group2" name="group2" value="42,2 км">
+                        <label for="option6_group2" class="radio-button">42,2 км</label>
+                        
+                        <input type="radio" id="option7_group2" name="group2" value="Я не бегал ранее на скорость">
+                        <label for="option7_group2" class="radio-button">Я не бегал ранее на скорость</label>
+            </div>
+
+            <div class="i_want_run">
+                <h2>За следующее время:</h2>
+
+
+                    <label=slider for="slider1">Часы:</label>
+                    <output id="slider1Value">0</output></br>
+
+                    <input type="range" min="0" max="5" value="0" step="1" id="slider1">
+
+                    </br>
+
+
+                    <label=slider for="slider2">Минуты:</label>
+                    <output id="slider2Value">0</output></br>
+
+                    <input type="range" min="0" max="59" value="0" step="1" id="slider2">
+
+                    </br>
+
+                    <label=slider for="slider3">Секунды:</label>
+                    <output id="slider3Value">0</output></br>
+
+                    <input type="range" min="0" max="59" value="0" step="1" id="slider3">
+
+                    <div>
+                        <button id="postProgramButton" class="second_button">Получить свой план тренировок</button>
+                    </div>
+					
+                    </span>
+                    
+            </div>
+    </div> 
+
+
+    <!--скрипт для передачи данных для расчета -->
+	<script>
+			document.getElementById('postProgramButton').addEventListener('click', function() {
+				let distanceToPrepareForElement = document.querySelector('input[name="group1"]:checked');
+				let weeksLeft = document.getElementById('slider').value;
+				let previousExperienceElement = document.querySelector('input[name="group2"]:checked');
+				let hours = document.getElementById('slider1').value;
+				let minutes = document.getElementById('slider2').value;
+				let seconds = document.getElementById('slider3').value;
+
+				if (distanceToPrepareForElement === null || previousExperienceElement === null) {
+					console.error("Не все данные выбраны");
+					return;
+				}
+
+				let distanceToPrepareFor = distanceToPrepareForElement.value;
+				let previousExperience = previousExperienceElement.value;
+
+				const requestData = {
+					distanceToPrepareFor,
+					weeksLeft,
+					previousExperience,
+					time: `${hours} часов ${minutes} минут ${seconds} секунд`
+				};
+
+				fetch('http://localhost:5223', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify(requestData)
+				})
+				.then(response => response.json())
+				.then(data => console.log(data))
+				.catch((error) => console.error('Ошибка:', error));
+			});	
+		</script>
+
+    <!--скрипт для определения количества недель -->
+    <script>
+    const slider = document.getElementById('slider');
+    const sliderValue = document.getElementById('sliderValue');
+
+    slider.addEventListener('input', function() {
+        sliderValue.textContent = slider.value;
+    });
+    </script>
+
+
+    <!-- скрипт для часов -->
+    <script>
+    const slider1 = document.getElementById('slider1');
+    const slider1Value = document.getElementById('slider1Value');
+
+    slider1.addEventListener('input', function() {
+        slider1Value.textContent = slider1.value;
+    });
+    </script>
+
+
+    <!-- скрипт для минут -->
+    <script>
+    const slider2 = document.getElementById('slider2');
+    const slider2Value = document.getElementById('slider2Value');
+
+    slider2.addEventListener('input', function() {
+        slider2Value.textContent = slider2.value;
+    });
+    </script>
+
+    <!-- скрипт для секунд -->
+    <script>
+    const slider3 = document.getElementById('slider3');
+    const slider3Value = document.getElementById('slider3Value');
+
+    slider3.addEventListener('input', function() {
+        slider3Value.textContent = slider3.value;
+    });
+    </script>
+</body>
+</html>
