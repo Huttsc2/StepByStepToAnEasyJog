@@ -36,6 +36,8 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                         Temps.ITemp = worksheet.Cells[row, 5].Text;
                         Temps.PvTemp200 = worksheet.Cells[row, 6].Text;
                         Temps.PvTemp400 = worksheet.Cells[row, 7].Text;
+                        Temps.PvTemp600 = worksheet.Cells[row, 8].Text;
+                        Temps.PvTemp800 = worksheet.Cells[row, 9].Text;
                         break;
                     }
                 }

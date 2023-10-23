@@ -293,6 +293,8 @@ input[type="range"]::-webkit-slider-thumb {
                         <button id="postProgramButton" class="second_button">Получить свой план тренировок</button>
                     </div>
 					
+					<div id="programContainer"></div>
+					
                     </span>
                     
             </div>
@@ -302,39 +304,57 @@ input[type="range"]::-webkit-slider-thumb {
     <!--скрипт для передачи данных для расчета -->
 	<script>
 			document.getElementById('postProgramButton').addEventListener('click', function() {
-				let distanceToPrepareForElement = document.querySelector('input[name="group1"]:checked');
-				let weeksLeft = document.getElementById('slider').value;
-				let previousExperienceElement = document.querySelector('input[name="group2"]:checked');
-				let hours = document.getElementById('slider1').value;
-				let minutes = document.getElementById('slider2').value;
-				let seconds = document.getElementById('slider3').value;
+			let distanceToPrepareForElement = document.querySelector('input[name="group1"]:checked');
+			let weeksLeft = document.getElementById('slider').value;
+			let previousExperienceElement = document.querySelector('input[name="group2"]:checked');
+			let hours = document.getElementById('slider1').value;
+			let minutes = document.getElementById('slider2').value;
+			let seconds = document.getElementById('slider3').value;
 
-				if (distanceToPrepareForElement === null || previousExperienceElement === null) {
-					console.error("Не все данные выбраны");
-					return;
-				}
+			if (distanceToPrepareForElement === null || previousExperienceElement === null) {
+				console.error("Не все данные выбраны");
+				return;
+			}
 
-				let distanceToPrepareFor = distanceToPrepareForElement.value;
-				let previousExperience = previousExperienceElement.value;
+			let distanceToPrepareFor = distanceToPrepareForElement.value;
+			let previousExperience = previousExperienceElement.value;
 
-				const requestData = {
-					distanceToPrepareFor,
-					weeksLeft,
-					previousExperience,
-					time: `${hours} часов ${minutes} минут ${seconds} секунд`
-				};
+			const requestData = {
+				distanceToPrepareFor,
+				weeksLeft,
+				previousExperience,
+				time: `${hours} часов ${minutes} минут ${seconds} секунд`
+			};
 
-				fetch('http://localhost:5223', {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-					},
-					body: JSON.stringify(requestData)
-				})
-				.then(response => response.json())
-				.then(data => console.log(data))
-				.catch((error) => console.error('Ошибка:', error));
-			});	
+			fetch('http://localhost:5223', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(requestData)
+			})
+			.then(response => response.json())
+			.then(data => {
+				const container = document.getElementById('programContainer');
+				container.innerHTML = "";  // очистим контейнер на случай, если там уже были элементы
+
+				data.weeks.forEach(week => {
+					let weekElement = document.createElement('div');
+					weekElement.className = 'week';
+					weekElement.innerHTML = `<h2>Неделя ${week.number}</h2>`;
+
+					week.days.forEach(day => {
+						let dayElement = document.createElement('div');
+						dayElement.className = 'day';
+						dayElement.textContent = day.program;
+						weekElement.appendChild(dayElement);
+					});
+
+					container.appendChild(weekElement);
+				});
+			})
+			.catch((error) => console.error('Ошибка:', error));
+		});	
 		</script>
 
     <!--скрипт для определения количества недель -->

@@ -2,6 +2,7 @@
 using StepByStepToAnEasyJog.Objects;
 using StepByStepToAnEasyJog.ProgramBuilder;
 using System.Text.RegularExpressions;
+using StepByStepToAnEasyJog.Objects.TrainingRespons;
 
 namespace StepByStepToAnEasyJog.Controller
 {
@@ -28,22 +29,10 @@ namespace StepByStepToAnEasyJog.Controller
             string vdot = new VdotSearcher(runData.Time, runData.PreviousExperience).GetVdot();
             Temps temps = new TempsSearcher(vdot).GetTemps();
             TrainingProgramPhases trainingPhases = new TrainingPhaseWeekCalculator(runData.WeeksLeft).GetProgramPhases();
-            string program = new WorkoutPlanCreator(temps, runData.DistanceToPrepareFor, trainingPhases).GetProgram();
+            List<Week> weeks = new WorkoutPlanCreator(runData.DistanceToPrepareFor, trainingPhases).GetProgram();
+            weeks = new TempReplacer(temps, weeks).GetWeeks();
 
-            Console.WriteLine($"vdot {vdot}");
-            Console.WriteLine($"L-temp {temps.LTemp}");
-            Console.WriteLine($"M-temp {temps.MTemp}");
-            Console.WriteLine($"P-temp {temps.PTemp}");
-            Console.WriteLine($"I-temp {temps.ITemp}");
-            Console.WriteLine($"Pv200-temp {temps.PvTemp200}");
-            Console.WriteLine($"Pv400-temp {temps.PvTemp400}");
-            Console.WriteLine($"init {trainingPhases.InitiationPhaseWeeks}");
-            Console.WriteLine($"dev {trainingPhases.DevelopmentPhaseWeeks}");
-            Console.WriteLine($"peak {trainingPhases.PeakPhaseWeeks}");
-            Console.WriteLine($"taper {trainingPhases.TaperPhaseWeeks}");
-            Console.WriteLine(program);
-
-            return Ok();
+            return Ok(weeks);
         }
     }
 }

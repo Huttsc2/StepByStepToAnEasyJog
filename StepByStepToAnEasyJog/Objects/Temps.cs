@@ -21,5 +21,11 @@ namespace StepByStepToAnEasyJog.Objects
 
         [JsonProperty("pvTemp400")]
         public string PvTemp400 { get; set; }
+
+        [JsonProperty("pvTemp600")]
+        public string PvTemp600 { get; set; }
+
+        [JsonProperty("pvTemp800")]
+        public string PvTemp800 { get; set; }
     }
 }
