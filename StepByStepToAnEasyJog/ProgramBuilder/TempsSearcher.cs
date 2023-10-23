@@ -6,7 +6,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
 {
     public class TempsSearcher
     {
-        private FileInfo FileInfo = new FileInfo(PathFinder.GetPathToTable());
+        private readonly FileInfo FileInfo = new FileInfo(PathFinder.GetPathToTable());
         private string Vdot { get; set; }
         private Temps Temps { get; set; }
         public TempsSearcher(string vdot)
@@ -43,6 +43,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                 }
             }
         }
+
 
         public Temps GetTemps()
         {

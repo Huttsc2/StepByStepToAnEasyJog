@@ -159,7 +159,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                     }
 
                     week = new WeekBuilder()
-                        .SetWeekNumber($"Неделя {WeekNumber} IninWeek")
+                        .SetWeekNumber($"Неделя {WeekNumber}")
                         .SetAdditionalInfo(additionalInfo)
                         .SetDays(days)
                         .Build();

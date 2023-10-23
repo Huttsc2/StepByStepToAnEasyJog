@@ -188,10 +188,11 @@ input[type="range"]::-webkit-slider-thumb {
 <body>
 
     <div class="container_header">
-        <div><h1> Шаг за шагом <br> к легкой пробежке</h1>
+        <div>
+            <h1> Шаг за шагом <br> к легкой пробежке</h1>
             <p>Получи бесплатный план тренировок, <br> чтобы соревнования стали для тебя легкой прогулкой.</p>
             <a href="#my-section">
-            <button>Рассчитать программу</button>
+                <button>Рассчитать программу</button>
             </a>
         </div>
         <div>
@@ -199,204 +200,230 @@ input[type="range"]::-webkit-slider-thumb {
         </div>
     </div>
 
-     <div class="container" id="my-section">
+    <div class="container" id="my-section">
 
         <span class="centered-element">
 
             <div class="i_want_run">
                 <h2>Я хочу пробежать:</h2>
 
-                        <input type="radio" id="option1_group1" name="group1" value="800 м">
-                        <label for="option1_group1" class="radio-button">800 м</label>
-                        
-                        <input type="radio" id="option2_group1" name="group1" value="1500 м">
-                        <label for="option2_group1" class="radio-button">1500 м</label>
-                        
-                        <input type="radio" id="option3_group1" name="group1" value="3000 м">
-                        <label for="option3_group1" class="radio-button">3000 м</label>
-                        
-                        <input type="radio" id="option4_group1" name="group1" value="5000 м">
-                        <label for="option4_group1" class="radio-button">5000 м</label><br>
-                        
-                        <input type="radio" id="option5_group1" name="group1" value="10 000 м">
-                        <label for="option5_group1" class="radio-button">10 000 м</label>
-                        
-                        <input type="radio" id="option6_group1" name="group1" value="21,1 км">
-                        <label for="option6_group1" class="radio-button">21,1 км</label>
-                        
-                        <input type="radio" id="option7_group1" name="group1" value="42,2 км">
-                        <label for="option7_group1" class="radio-button">42,2 км</label>
+                <input type="radio" id="option1_group1" name="group1" value="800 м">
+                <label for="option1_group1" class="radio-button">800 м</label>
+
+                <input type="radio" id="option2_group1" name="group1" value="1500 м">
+                <label for="option2_group1" class="radio-button">1500 м</label>
+
+                <input type="radio" id="option3_group1" name="group1" value="3000 м">
+                <label for="option3_group1" class="radio-button">3000 м</label>
+
+                <input type="radio" id="option4_group1" name="group1" value="5000 м">
+                <label for="option4_group1" class="radio-button">5000 м</label><br>
+
+                <input type="radio" id="option5_group1" name="group1" value="10 000 м">
+                <label for="option5_group1" class="radio-button">10 000 м</label>
+
+                <input type="radio" id="option6_group1" name="group1" value="21,1 км">
+                <label for="option6_group1" class="radio-button">21,1 км</label>
+
+                <input type="radio" id="option7_group1" name="group1" value="42,2 км">
+                <label for="option7_group1" class="radio-button">42,2 км</label>
 
             </div>
 
             <div class="i_want_run">
-                    <h2>До соревнований осталось:</h2>
+                <h2>До соревнований осталось:</h2>
 
-                        <label=slider for="slider">Недель:</label>
-                        <output id="sliderValue">1</output></br>
+                <label =slider for="slider">Недель:</label>
+                <output id="sliderValue">1</output></br>
 
-                        <input type="range" min="1" max="24" value="1" step="1" id="slider">
+                <input type="range" min="1" max="24" value="1" step="1" id="slider">
 
-                        
-             </div>           
 
-             <div class="i_want_run">
-                    <h2>Я уже бегал ранее:</h2>
-                        
-                        <input type="radio" id="option1_group2" name="group2" value="1500 м">
-                        <label for="option1_group2" class="radio-button">1500 м</label>
-                        
-                        <input type="radio" id="option2_group2" name="group2" value="3000 м">
-                        <label for="option2_group2" class="radio-button">3000 м</label>
-                        
-                        <input type="radio" id="option3_group2" name="group2" value="5000 м">
-                        <label for="option3_group2" class="radio-button">5000 м</label>
-                        
-                        <input type="radio" id="option4_group2" name="group2" value="10 000 м">
-                        <label for="option4_group2" class="radio-button">10 000 м</label><br>
-                        
-                        <input type="radio" id="option5_group2" name="group2" value="21,1 км">
-                        <label for="option5_group2" class="radio-button">21,1 км</label>
-                        
-                        <input type="radio" id="option6_group2" name="group2" value="42,2 км">
-                        <label for="option6_group2" class="radio-button">42,2 км</label>
-                        
-                        <input type="radio" id="option7_group2" name="group2" value="Я не бегал ранее на скорость">
-                        <label for="option7_group2" class="radio-button">Я не бегал ранее на скорость</label>
+            </div>
+
+            <div class="i_want_run">
+                <h2>Я уже бегал ранее:</h2>
+
+                <input type="radio" id="option1_group2" name="group2" value="1500 м">
+                <label for="option1_group2" class="radio-button">1500 м</label>
+
+                <input type="radio" id="option2_group2" name="group2" value="3000 м">
+                <label for="option2_group2" class="radio-button">3000 м</label>
+
+                <input type="radio" id="option3_group2" name="group2" value="5000 м">
+                <label for="option3_group2" class="radio-button">5000 м</label>
+
+                <input type="radio" id="option4_group2" name="group2" value="10 000 м">
+                <label for="option4_group2" class="radio-button">10 000 м</label><br>
+
+                <input type="radio" id="option5_group2" name="group2" value="21,1 км">
+                <label for="option5_group2" class="radio-button">21,1 км</label>
+
+                <input type="radio" id="option6_group2" name="group2" value="42,2 км">
+                <label for="option6_group2" class="radio-button">42,2 км</label>
+
+                <input type="radio" id="option7_group2" name="group2" value="Я не бегал ранее на скорость">
+                <label for="option7_group2" class="radio-button">Я не бегал ранее на скорость</label>
             </div>
 
             <div class="i_want_run">
                 <h2>За следующее время:</h2>
 
 
-                    <label=slider for="slider1">Часы:</label>
-                    <output id="slider1Value">0</output></br>
+                <label =slider for="slider1">Часы:</label>
+                <output id="slider1Value">0</output></br>
 
-                    <input type="range" min="0" max="5" value="0" step="1" id="slider1">
+                <input type="range" min="0" max="5" value="0" step="1" id="slider1">
 
-                    </br>
+                </br>
 
 
-                    <label=slider for="slider2">Минуты:</label>
-                    <output id="slider2Value">0</output></br>
+                <label =slider for="slider2">Минуты:</label>
+                <output id="slider2Value">0</output></br>
 
-                    <input type="range" min="0" max="59" value="0" step="1" id="slider2">
+                <input type="range" min="0" max="59" value="0" step="1" id="slider2">
 
-                    </br>
+                </br>
 
-                    <label=slider for="slider3">Секунды:</label>
-                    <output id="slider3Value">0</output></br>
+                <label =slider for="slider3">Секунды:</label>
+                <output id="slider3Value">0</output></br>
 
-                    <input type="range" min="0" max="59" value="0" step="1" id="slider3">
+                <input type="range" min="0" max="59" value="0" step="1" id="slider3">
 
-                    <div>
-                        <button id="postProgramButton" class="second_button">Получить свой план тренировок</button>
-                    </div>
-					
-					<div id="programContainer"></div>
-					
-                    </span>
-                    
-            </div>
-    </div> 
+                <div>
+                    <button id="postProgramButton" class="second_button">Получить свой план тренировок</button>
+                </div>
+
+                <div id="trainingPlan"></div>
+
+        </span>
+
+    </div>
+    </div>
 
 
     <!--скрипт для передачи данных для расчета -->
-	<script>
-			document.getElementById('postProgramButton').addEventListener('click', function() {
-			let distanceToPrepareForElement = document.querySelector('input[name="group1"]:checked');
-			let weeksLeft = document.getElementById('slider').value;
-			let previousExperienceElement = document.querySelector('input[name="group2"]:checked');
-			let hours = document.getElementById('slider1').value;
-			let minutes = document.getElementById('slider2').value;
-			let seconds = document.getElementById('slider3').value;
+    <script>
+        document.getElementById('postProgramButton').addEventListener('click', function () {
+            let distanceToPrepareForElement = document.querySelector('input[name="group1"]:checked');
+            let weeksLeft = document.getElementById('slider').value;
+            let previousExperienceElement = document.querySelector('input[name="group2"]:checked');
+            let hours = document.getElementById('slider1').value;
+            let minutes = document.getElementById('slider2').value;
+            let seconds = document.getElementById('slider3').value;
 
-			if (distanceToPrepareForElement === null || previousExperienceElement === null) {
-				console.error("Не все данные выбраны");
-				return;
-			}
+            if (distanceToPrepareForElement === null || previousExperienceElement === null) {
+                console.error("Не все данные выбраны");
+                return;
+            }
 
-			let distanceToPrepareFor = distanceToPrepareForElement.value;
-			let previousExperience = previousExperienceElement.value;
+            let distanceToPrepareFor = distanceToPrepareForElement.value;
+            let previousExperience = previousExperienceElement.value;
 
-			const requestData = {
-				distanceToPrepareFor,
-				weeksLeft,
-				previousExperience,
-				time: `${hours} часов ${minutes} минут ${seconds} секунд`
-			};
+            const requestData = {
+                distanceToPrepareFor,
+                weeksLeft,
+                previousExperience,
+                time: `${hours} часов ${minutes} минут ${seconds} секунд`
+            };
 
-			fetch('http://localhost:5223', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json',
-				},
-				body: JSON.stringify(requestData)
-			})
-			.then(response => response.json())
-			.then(data => {
-				const container = document.getElementById('programContainer');
-				container.innerHTML = "";  // очистим контейнер на случай, если там уже были элементы
+            fetch('http://localhost:5223', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(requestData)
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Ошибка сервера');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data); // выводим данные в консоль
+                    const container = document.getElementById('trainingPlan');
+                    container.innerHTML = '';
 
-				data.weeks.forEach(week => {
-					let weekElement = document.createElement('div');
-					weekElement.className = 'week';
-					weekElement.innerHTML = `<h2>Неделя ${week.number}</h2>`;
+                    data.forEach(week => {
+                        const weekElement = document.createElement('div');
+                        weekElement.className = 'week';
 
-					week.days.forEach(day => {
-						let dayElement = document.createElement('div');
-						dayElement.className = 'day';
-						dayElement.textContent = day.program;
-						weekElement.appendChild(dayElement);
-					});
+                        const weekTitle = document.createElement('h2');
+                        weekTitle.textContent = week.weekNumber;
+                        weekElement.appendChild(weekTitle);
 
-					container.appendChild(weekElement);
-				});
-			})
-			.catch((error) => console.error('Ошибка:', error));
-		});	
-		</script>
+                        week.days.forEach(day => {
+                            const dayElement = document.createElement('div');
+                            dayElement.className = 'day';
+
+                            const dayTitle = document.createElement('h3');
+                            dayTitle.textContent = day.dayNumber;
+                            dayElement.appendChild(dayTitle);
+
+                            const trainingProgram = document.createElement('p');
+                            trainingProgram.textContent = day.trainingProgram;
+                            dayElement.appendChild(trainingProgram);
+
+                            weekElement.appendChild(dayElement);
+                        });
+
+                        if (week.additionalInfo) {
+                            const additionalInfo = document.createElement('p');
+                            additionalInfo.textContent = week.additionalInfo;
+                            weekElement.appendChild(additionalInfo);
+                        }
+
+                        container.appendChild(weekElement);
+                    });
+                })
+                .catch((error) => console.error('Ошибка:', error));
+        });
+
+    </script>
+
+    
 
     <!--скрипт для определения количества недель -->
     <script>
-    const slider = document.getElementById('slider');
-    const sliderValue = document.getElementById('sliderValue');
+        const slider = document.getElementById('slider');
+        const sliderValue = document.getElementById('sliderValue');
 
-    slider.addEventListener('input', function() {
-        sliderValue.textContent = slider.value;
-    });
+        slider.addEventListener('input', function () {
+            sliderValue.textContent = slider.value;
+        });
     </script>
 
 
     <!-- скрипт для часов -->
     <script>
-    const slider1 = document.getElementById('slider1');
-    const slider1Value = document.getElementById('slider1Value');
+        const slider1 = document.getElementById('slider1');
+        const slider1Value = document.getElementById('slider1Value');
 
-    slider1.addEventListener('input', function() {
-        slider1Value.textContent = slider1.value;
-    });
+        slider1.addEventListener('input', function () {
+            slider1Value.textContent = slider1.value;
+        });
     </script>
 
 
     <!-- скрипт для минут -->
     <script>
-    const slider2 = document.getElementById('slider2');
-    const slider2Value = document.getElementById('slider2Value');
+        const slider2 = document.getElementById('slider2');
+        const slider2Value = document.getElementById('slider2Value');
 
-    slider2.addEventListener('input', function() {
-        slider2Value.textContent = slider2.value;
-    });
+        slider2.addEventListener('input', function () {
+            slider2Value.textContent = slider2.value;
+        });
     </script>
 
     <!-- скрипт для секунд -->
     <script>
-    const slider3 = document.getElementById('slider3');
-    const slider3Value = document.getElementById('slider3Value');
+        const slider3 = document.getElementById('slider3');
+        const slider3Value = document.getElementById('slider3Value');
 
-    slider3.addEventListener('input', function() {
-        slider3Value.textContent = slider3.value;
-    });
+        slider3.addEventListener('input', function () {
+            slider3Value.textContent = slider3.value;
+        });
     </script>
 </body>
 </html>

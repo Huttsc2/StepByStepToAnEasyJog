@@ -17,7 +17,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
 
         private string ReplaceTempoPlaceholders(string input)
         {
-            Dictionary<string, string> replacements = new Dictionary<string, string>
+            Dictionary<string, string> replacements = new()
             {
                 { "[L]", Temps.LTemp },
                 { "[M]", Temps.MTemp },
@@ -44,6 +44,10 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                 foreach (Day day in week.Days)
                 {
                     day.TrainingProgram = ReplaceTempoPlaceholders(day.TrainingProgram);
+                }
+                if (week.AdditionalInfo != null)
+                {
+                    week.AdditionalInfo = ReplaceTempoPlaceholders(week.AdditionalInfo);
                 }
             }
         }

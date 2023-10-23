@@ -3,6 +3,7 @@ using StepByStepToAnEasyJog.Objects;
 using StepByStepToAnEasyJog.ProgramBuilder;
 using System.Text.RegularExpressions;
 using StepByStepToAnEasyJog.Objects.TrainingRespons;
+using Newtonsoft.Json;
 
 namespace StepByStepToAnEasyJog.Controller
 {
@@ -23,8 +24,6 @@ namespace StepByStepToAnEasyJog.Controller
 
                 runData.Time = $"{hours:D2}:{minutes:D2}:{seconds:D2}";
             }
-
-            Console.WriteLine($"{runData.DistanceToPrepareFor} {runData.PreviousExperience} {runData.WeeksLeft} {runData.Time}");
 
             string vdot = new VdotSearcher(runData.Time, runData.PreviousExperience).GetVdot();
             Temps temps = new TempsSearcher(vdot).GetTemps();
