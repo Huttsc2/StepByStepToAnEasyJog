@@ -3,7 +3,6 @@ using StepByStepToAnEasyJog.Objects;
 using StepByStepToAnEasyJog.ProgramBuilder;
 using System.Text.RegularExpressions;
 using StepByStepToAnEasyJog.Objects.TrainingRespons;
-using Newtonsoft.Json;
 
 namespace StepByStepToAnEasyJog.Controller
 {

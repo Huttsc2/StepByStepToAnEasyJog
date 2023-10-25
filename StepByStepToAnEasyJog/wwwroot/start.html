@@ -350,7 +350,7 @@ input[type="range"]::-webkit-slider-thumb {
                         weekElement.className = 'week';
 
                         const weekTitle = document.createElement('h2');
-                        weekTitle.textContent = week.weekNumber;
+                        weekTitle.innerHTML = week.weekNumber;
                         weekElement.appendChild(weekTitle);
 
                         week.days.forEach(day => {
@@ -358,11 +358,11 @@ input[type="range"]::-webkit-slider-thumb {
                             dayElement.className = 'day';
 
                             const dayTitle = document.createElement('h3');
-                            dayTitle.textContent = day.dayNumber;
+                            dayTitle.innerHTML = day.dayNumber;
                             dayElement.appendChild(dayTitle);
 
                             const trainingProgram = document.createElement('p');
-                            trainingProgram.textContent = day.trainingProgram;
+                            trainingProgram.innerHTML = day.trainingProgram;
                             dayElement.appendChild(trainingProgram);
 
                             weekElement.appendChild(dayElement);
@@ -370,7 +370,7 @@ input[type="range"]::-webkit-slider-thumb {
 
                         if (week.additionalInfo) {
                             const additionalInfo = document.createElement('p');
-                            additionalInfo.textContent = week.additionalInfo;
+                            additionalInfo.innerHTML = week.additionalInfo;
                             weekElement.appendChild(additionalInfo);
                         }
 

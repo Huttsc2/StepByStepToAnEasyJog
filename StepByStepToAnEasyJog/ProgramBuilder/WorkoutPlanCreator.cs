@@ -43,7 +43,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                     Create1500mOr3000mProgram();
                     break;
                 case "5000 м":
-                case "10 км":
+                case "10 000 м":
                     Create5000mOr10kmProgram();
                     break;
                 case "21,1 км":
@@ -136,7 +136,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                         foreach (int infoRow in CompleteSchedule.InitSchedule.Weeks[i].AdditionalInfo)
                         {
                             additionalInfo += worksheet.Cells[infoRow, CompleteSchedule.InitSchedule.Column].Text;
-                            additionalInfo += "\n";
+                            additionalInfo += "<br>";
                         }
                     }
 
@@ -146,7 +146,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                         foreach (int trainingRow in CompleteSchedule.InitSchedule.Weeks[i].Days[j].TrainingDescription)
                         {
                             trainig += worksheet.Cells[trainingRow, CompleteSchedule.InitSchedule.Column].Text;
-                            trainig += "\n";
+                            trainig += "<br>";
                         }
 
                         days.Add(new DayBuilder()
@@ -187,7 +187,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                         foreach (int infoRow in CompleteSchedule.DevSchedule.Weeks[i].AdditionalInfo)
                         {
                             additionalInfo += worksheet.Cells[infoRow, CompleteSchedule.DevSchedule.Column].Text;
-                            additionalInfo += "\n";
+                            additionalInfo += "<br>";
                         }
                     }
 
@@ -197,7 +197,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                         foreach (int trainingRow in CompleteSchedule.DevSchedule.Weeks[i].Days[j].TrainingDescription)
                         {
                             trainig += worksheet.Cells[trainingRow, CompleteSchedule.DevSchedule.Column].Text;
-                            trainig += "\n";
+                            trainig += "<br>";
                         }
 
                         days.Add(new DayBuilder()
@@ -238,7 +238,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                         foreach (int infoRow in CompleteSchedule.PeakSchedule.Weeks[i].AdditionalInfo)
                         {
                             additionalInfo += worksheet.Cells[infoRow, CompleteSchedule.PeakSchedule.Column].Text;
-                            additionalInfo += "\n";
+                            additionalInfo += "<br>";
                         }
                     }
 
@@ -248,7 +248,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                         foreach (int trainingRow in CompleteSchedule.PeakSchedule.Weeks[i].Days[j].TrainingDescription)
                         {
                             trainig += worksheet.Cells[trainingRow, CompleteSchedule.PeakSchedule.Column].Text;
-                            trainig += "\n";
+                            trainig += "<br>";
                         }
 
                         days.Add(new DayBuilder()
@@ -289,7 +289,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                         foreach (int infoRow in CompleteSchedule.TaperSchedule.Weeks[i].AdditionalInfo)
                         {
                             additionalInfo += worksheet.Cells[infoRow, CompleteSchedule.TaperSchedule.Column].Text;
-                            additionalInfo += "\n";
+                            additionalInfo += "<br>";
                         }
                     }
 
@@ -299,7 +299,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                         foreach (int trainingRow in CompleteSchedule.TaperSchedule.Weeks[i].Days[j].TrainingDescription)
                         {
                             trainig += worksheet.Cells[trainingRow, CompleteSchedule.TaperSchedule.Column].Text;
-                            trainig += "\n";
+                            trainig += "<br>";
                         }
 
                         days.Add(new DayBuilder()
@@ -321,7 +321,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                     Weeks.Add(week);
                 }
 
-                if (ProgramPhases.TaperPhaseWeeks < 6)
+                if (ProgramPhases.TaperPhaseWeeks < 6 && ProgramPhases.TaperPhaseWeeks > 0)
                 {
                     Weeks.RemoveAt(Weeks.Count-1);
 
@@ -334,7 +334,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                             .Days[j].TrainingDescription)
                         {
                             trainig += worksheet.Cells[trainingRow, CompleteSchedule.AltTaperSchedule.Column].Text;
-                            trainig += "\n";
+                            trainig += "<br>";
                         }
 
                         days.Add(new DayBuilder()
