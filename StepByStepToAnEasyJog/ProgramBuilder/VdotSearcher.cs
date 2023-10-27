@@ -39,7 +39,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                 case "5000 м":
                     Column = 4;
                     break;
-                case "10 км":
+                case "10 000 м":
                     Column = 5;
                     break;
                 case "21,1 км":
