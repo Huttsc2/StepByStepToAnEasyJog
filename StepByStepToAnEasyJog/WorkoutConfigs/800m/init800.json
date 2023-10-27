@@ -4,7 +4,6 @@
   "weeks": [
     {
       "weekNumber": 1,
-      "additionalInfo": [ 15 ],
       "days": [
         {
           "dayNumber": 2,
@@ -21,12 +20,15 @@
         {
           "dayNumber": 11,
           "trainingDescription": [ 12 ]
+        },
+        {
+          "dayNumber": 14,
+          "trainingDescription": [ 15 ]
         }
       ]
     },
     {
       "weekNumber": 2,
-      "additionalInfo": [ 32 ],
       "days": [
         {
           "dayNumber": 19,
@@ -43,12 +45,15 @@
         {
           "dayNumber": 28,
           "trainingDescription": [ 29 ]
+        },
+        {
+          "dayNumber": 31,
+          "trainingDescription": [ 32 ]
         }
       ]
     },
     {
       "weekNumber": 3,
-      "additionalInfo": [ 49 ],
       "days": [
         {
           "dayNumber": 36,
@@ -65,12 +70,15 @@
         {
           "dayNumber": 45,
           "trainingDescription": [ 46 ]
+        },
+        {
+          "dayNumber": 48,
+          "trainingDescription": [ 49 ]
         }
       ]
     },
     {
       "weekNumber": 4,
-      "additionalInfo": [ 66 ],
       "days": [
         {
           "dayNumber": 53,
@@ -87,12 +95,15 @@
         {
           "dayNumber": 62,
           "trainingDescription": [ 63 ]
+        },
+        {
+          "dayNumber": 65,
+          "trainingDescription": [ 66 ]
         }
       ]
     },
     {
       "weekNumber": 5,
-      "additionalInfo": [ 83 ],
       "days": [
         {
           "dayNumber": 70,
@@ -109,12 +120,15 @@
         {
           "dayNumber": 79,
           "trainingDescription": [ 80 ]
+        },
+        {
+          "dayNumber": 82,
+          "trainingDescription": [ 83 ]
         }
       ]
     },
     {
       "weekNumber": 6,
-      "additionalInfo": [ 100 ],
       "days": [
         {
           "dayNumber": 87,
@@ -131,6 +145,10 @@
         {
           "dayNumber": 96,
           "trainingDescription": [ 97 ]
+        },
+        {
+          "dayNumber": 99,
+          "trainingDescription": [ 100 ]
         }
       ]
     }

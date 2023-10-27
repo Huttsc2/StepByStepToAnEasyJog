@@ -45,10 +45,6 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                 {
                     day.TrainingProgram = ReplaceTempoPlaceholders(day.TrainingProgram);
                 }
-                if (week.AdditionalInfo != null)
-                {
-                    week.AdditionalInfo = ReplaceTempoPlaceholders(week.AdditionalInfo);
-                }
             }
         }
 

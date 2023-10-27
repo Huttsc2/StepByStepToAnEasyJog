@@ -29,8 +29,20 @@ namespace StepByStepToAnEasyJog.Controller
             TrainingProgramPhases trainingPhases = new TrainingPhaseWeekCalculator(runData.WeeksLeft).GetProgramPhases();
             List<Week> weeks = new WorkoutPlanCreator(runData.DistanceToPrepareFor, trainingPhases).GetProgram();
             weeks = new TempReplacer(temps, weeks).GetWeeks();
+            TrainingAndDisclaimer trainingAndDisclaimer = new TrainingAndDisclaimer();
+            string disclaimer = "<br><br><strong>Как рассчитана программа:</strong><p>" +
+                "Программа тренировок рассчитана по книге выдающегося американского" +
+                " тренера Джека Дэниэлса \"От 800 метров до марафона\".</p> <p>Все " +
+                "методики, упражнения и тренировочный темп взяты из этой книги.</p>" +
+                "<br><strong>Как пользоваться программой:</strong><p>Отдельно " +
+                "выделены дни с обязательными тренировками. Рекомендуется не проводить " +
+                "их подряд, а равномерно разнести на всю неделю.</p><p>Дополнительные " +
+                "тренировки можно проводить в качестве восстановительных занятий между " +
+                "основными днями.</p>";
+            trainingAndDisclaimer.Weeks = weeks;
+            trainingAndDisclaimer.Disclaimer = disclaimer;
 
-            return Ok(weeks);
+            return Ok(trainingAndDisclaimer);
         }
     }
 }

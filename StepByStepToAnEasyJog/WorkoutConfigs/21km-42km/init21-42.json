@@ -4,7 +4,6 @@
   "weeks": [
     {
       "weekNumber": 1,
-      "additionalInfo": [ 15 ],
       "days": [
         {
           "dayNumber": 2,
@@ -21,12 +20,15 @@
         {
           "dayNumber": 11,
           "trainingDescription": [ 12 ]
+        },
+        {
+          "dayNumber": 14,
+          "trainingDescription": [ 15 ]
         }
       ]
     },
     {
       "weekNumber": 2,
-      "additionalInfo": [ 32 ],
       "days": [
         {
           "dayNumber": 19,
@@ -43,12 +45,15 @@
         {
           "dayNumber": 28,
           "trainingDescription": [ 29 ]
+        },
+        {
+          "dayNumber": 31,
+          "trainingDescription": [ 32 ]
         }
       ]
     },
     {
       "weekNumber": 3,
-      "additionalInfo": [ 49 ],
       "days": [
         {
           "dayNumber": 36,
@@ -65,12 +70,15 @@
         {
           "dayNumber": 45,
           "trainingDescription": [ 46 ]
+        },
+        {
+          "dayNumber": 48,
+          "trainingDescription": [ 49 ]
         }
       ]
     },
     {
       "weekNumber": 4,
-      "additionalInfo": [ 68 ],
       "days": [
         {
           "dayNumber": 53,
@@ -87,12 +95,15 @@
         {
           "dayNumber": 63,
           "trainingDescription": [ 64, 65 ]
+        },
+        {
+          "dayNumber": 67,
+          "trainingDescription": [ 68 ]
         }
       ]
     },
     {
       "weekNumber": 5,
-      "additionalInfo": [ 87 ],
       "days": [
         {
           "dayNumber": 72,
@@ -109,12 +120,15 @@
         {
           "dayNumber": 82,
           "trainingDescription": [ 83, 84 ]
+        },
+        {
+          "dayNumber": 86,
+          "trainingDescription": [ 87 ]
         }
       ]
     },
     {
       "weekNumber": 6,
-      "additionalInfo": [ 106 ],
       "days": [
         {
           "dayNumber": 91,
@@ -131,6 +145,10 @@
         {
           "dayNumber": 101,
           "trainingDescription": [ 102, 103 ]
+        },
+        {
+          "dayNumber": 105,
+          "trainingDescription": [ 106 ]
         }
       ]
     }

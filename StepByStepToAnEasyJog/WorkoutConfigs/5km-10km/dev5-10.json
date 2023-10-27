@@ -4,121 +4,139 @@
   "weeks": [
     {
       "weekNumber": 1,
-      "additionalInfo": [ 121 ],
       "days": [
         {
           "dayNumber": 104,
-          "trainingDescription": [ 105 ]
+          "trainingDescription": [ 105, 106, 107 ]
         },
         {
-          "dayNumber": 107,
-          "trainingDescription": [ 108 ]
+          "dayNumber": 109,
+          "trainingDescription": [ 110 ]
         },
         {
-          "dayNumber": 110,
-          "trainingDescription": [ 111, 112, 113, 114, 115 ]
+          "dayNumber": 112,
+          "trainingDescription": [ 113, 114, 115, 116, 117 ]
         },
         {
-          "dayNumber": 117,
-          "trainingDescription": [ 118 ]
+          "dayNumber": 119,
+          "trainingDescription": [ 120 ]
+        },
+        {
+          "dayNumber": 122,
+          "trainingDescription": [ 123 ]
         }
       ]
     },
     {
       "weekNumber": 2,
-      "additionalInfo": [ 135 ],
       "days": [
         {
-          "dayNumber": 125,
-          "trainingDescription": [ 126 ]
+          "dayNumber": 127,
+          "trainingDescription": [ 128 ]
         },
         {
-          "dayNumber": 128,
-          "trainingDescription": [ 129]
+          "dayNumber": 130,
+          "trainingDescription": [ 131 ]
         },
         {
-          "dayNumber": 131,
-          "trainingDescription": [ 132]
+          "dayNumber": 133,
+          "trainingDescription": [ 134 ]
+        },
+        {
+          "dayNumber": 136,
+          "trainingDescription": [ 137 ]
         }
       ]
     },
     {
       "weekNumber": 3,
-      "additionalInfo": [ 156 ],
       "days": [
         {
-          "dayNumber": 139,
-          "trainingDescription": [ 140, 141, 142, 143, 144 ]
+          "dayNumber": 141,
+          "trainingDescription": [ 142, 143, 144, 145, 146 ]
         },
         {
-          "dayNumber": 146,
-          "trainingDescription": [ 147 ]
+          "dayNumber": 148,
+          "trainingDescription": [ 149 ]
         },
         {
-          "dayNumber": 149,
-          "trainingDescription": [ 150 ]
+          "dayNumber": 151,
+          "trainingDescription": [ 152 ]
         },
         {
-          "dayNumber": 152,
-          "trainingDescription": [ 153 ]
+          "dayNumber": 154,
+          "trainingDescription": [ 155 ]
+        },
+        {
+          "dayNumber": 157,
+          "trainingDescription": [ 158 ]
         }
       ]
     },
     {
       "weekNumber": 4,
-      "additionalInfo": [ 173 ],
       "days": [
         {
-          "dayNumber": 160,
-          "trainingDescription": [ 161, 162, 163, 164]
+          "dayNumber": 162,
+          "trainingDescription": [ 163, 164, 165, 166 ]
         },
         {
-          "dayNumber": 166,
-          "trainingDescription": [ 167 ]
+          "dayNumber": 168,
+          "trainingDescription": [ 169 ]
         },
         {
-          "dayNumber": 169,
-          "trainingDescription": [ 170 ]
+          "dayNumber": 171,
+          "trainingDescription": [ 172 ]
+        },
+        {
+          "dayNumber": 174,
+          "trainingDescription": [ 175 ]
         }
       ]
     },
     {
       "weekNumber": 5,
-      "additionalInfo": [ 198 ],
       "days": [
         {
-          "dayNumber": 177,
-          "trainingDescription": [ 178 ]
+          "dayNumber": 179,
+          "trainingDescription": [ 180 ]
         },
         {
-          "dayNumber": 180,
-          "trainingDescription": [ 181, 182, 183, 184, 185]
+          "dayNumber": 182,
+          "trainingDescription": [ 183, 184, 185, 186, 187 ]
         },
         {
-          "dayNumber": 187,
-          "trainingDescription": [ 188, 189, 190, 191, 192 ]
+          "dayNumber": 189,
+          "trainingDescription": [ 190, 191, 192, 193, 194 ]
         },
         {
-          "dayNumber": 194,
-          "trainingDescription": [ 195 ]
+          "dayNumber": 196,
+          "trainingDescription": [ 197 ]
+        },
+        {
+          "dayNumber": 199,
+          "trainingDescription": [ 200 ]
         }
       ]
     },
     {
       "weekNumber": 6,
-      "additionalInfo": [ 223 ],
       "days": [
         {
-          "dayNumber": 202,
-          "trainingDescription": [ 203, 204, 205, 206 ]
+          "dayNumber": 204,
+          "trainingDescription": [ 205, 206, 207, 208 ]
         },
         {
-          "dayNumber": 208,
-          "trainingDescription": [ 209, 210, 211, 212, 213, 214, 215, 216, 217 ]
+          "dayNumber": 210,
+          "trainingDescription": [ 211, 212, 213, 214, 215, 216, 217, 218, 219 ]
         },
         {
-          "dayNumber": 219,
-          "trainingDescription": [ 220]
+          "dayNumber": 221,
+          "trainingDescription": [ 222 ]
+        },
+        {
+          "dayNumber": 224,
+          "trainingDescription": [ 225 ]
         }
       ]
     }

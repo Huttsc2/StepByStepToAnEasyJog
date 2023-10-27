@@ -4,7 +4,6 @@
   "weeks": [
     {
       "weekNumber": 1,
-      "additionalInfo": [ 118 ],
       "days": [
         {
           "dayNumber": 104,
@@ -21,12 +20,15 @@
         {
           "dayNumber": 114,
           "trainingDescription": [ 115 ]
+        },
+        {
+          "dayNumber": 117,
+          "trainingDescription": [ 118 ]
         }
       ]
     },
     {
       "weekNumber": 2,
-      "additionalInfo": [ 135 ],
       "days": [
         {
           "dayNumber": 122,
@@ -39,12 +41,15 @@
         {
           "dayNumber": 131,
           "trainingDescription": [ 132 ]
+        },
+        {
+          "dayNumber": 134,
+          "trainingDescription": [ 135 ]
         }
       ]
     },
     {
       "weekNumber": 3,
-      "additionalInfo": [ 155 ],
       "days": [
         {
           "dayNumber": 139,
@@ -61,12 +66,15 @@
         {
           "dayNumber": 151,
           "trainingDescription": [ 152 ]
+        },
+        {
+          "dayNumber": 154,
+          "trainingDescription": [ 155 ]
         }
       ]
     },
     {
       "weekNumber": 4,
-      "additionalInfo": [ 172 ],
       "days": [
         {
           "dayNumber": 159,
@@ -79,12 +87,15 @@
         {
           "dayNumber": 168,
           "trainingDescription": [ 169 ]
+        },
+        {
+          "dayNumber": 171,
+          "trainingDescription": [ 172 ]
         }
       ]
     },
     {
       "weekNumber": 5,
-      "additionalInfo": [ 195 ],
       "days": [
         {
           "dayNumber": 176,
@@ -101,12 +112,15 @@
         {
           "dayNumber": 191,
           "trainingDescription": [ 192 ]
+        },
+        {
+          "dayNumber": 194,
+          "trainingDescription": [ 195 ]
         }
       ]
     },
     {
       "weekNumber": 6,
-      "additionalInfo": [ 212 ],
       "days": [
         {
           "dayNumber": 199,
@@ -119,6 +133,10 @@
         {
           "dayNumber": 208,
           "trainingDescription": [ 209 ]
+        },
+        {
+          "dayNumber": 211,
+          "trainingDescription": [ 212 ]
         }
       ]
     }

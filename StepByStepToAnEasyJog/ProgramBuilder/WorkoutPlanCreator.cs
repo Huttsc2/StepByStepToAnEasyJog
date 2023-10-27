@@ -128,17 +128,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                 Week week;
                 for (int i = 0; i < ProgramPhases.InitiationPhaseWeeks; i++)
                 {
-                    string additionalInfo = null;
                     string trainig = null;
-                    bool isAdditionalInfo = CompleteSchedule.InitSchedule.Weeks[i].AdditionalInfo != null;
-                    if (isAdditionalInfo)
-                    {
-                        foreach (int infoRow in CompleteSchedule.InitSchedule.Weeks[i].AdditionalInfo)
-                        {
-                            additionalInfo += worksheet.Cells[infoRow, CompleteSchedule.InitSchedule.Column].Text;
-                            additionalInfo += "<br>";
-                        }
-                    }
 
                     List<Day> days = new List<Day>();
                     for (int j = 0; j < CompleteSchedule.InitSchedule.Weeks[i].Days.Count; j++)
@@ -160,7 +150,6 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
 
                     week = new WeekBuilder()
                         .SetWeekNumber($"Неделя {WeekNumber}")
-                        .SetAdditionalInfo(additionalInfo)
                         .SetDays(days)
                         .Build();
 
@@ -179,17 +168,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                 Week week;
                 for (int i = 0; i < ProgramPhases.DevelopmentPhaseWeeks; i++)
                 {
-                    string additionalInfo = null;
                     string trainig = null;
-                    bool isAdditionalInfo = CompleteSchedule.DevSchedule.Weeks[i].AdditionalInfo != null;
-                    if (isAdditionalInfo)
-                    {
-                        foreach (int infoRow in CompleteSchedule.DevSchedule.Weeks[i].AdditionalInfo)
-                        {
-                            additionalInfo += worksheet.Cells[infoRow, CompleteSchedule.DevSchedule.Column].Text;
-                            additionalInfo += "<br>";
-                        }
-                    }
 
                     List<Day> days = new List<Day>();
                     for (int j = 0; j < CompleteSchedule.DevSchedule.Weeks[i].Days.Count; j++)
@@ -211,7 +190,6 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
 
                     week = new WeekBuilder()
                         .SetWeekNumber($"Неделя {WeekNumber}")
-                        .SetAdditionalInfo(additionalInfo)
                         .SetDays(days)
                         .Build();
 
@@ -230,17 +208,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                 Week week;
                 for (int i = 0; i < ProgramPhases.PeakPhaseWeeks; i++)
                 {
-                    string additionalInfo = null;
                     string trainig = null;
-                    bool isAdditionalInfo = CompleteSchedule.PeakSchedule.Weeks[i].AdditionalInfo != null;
-                    if (isAdditionalInfo)
-                    {
-                        foreach (int infoRow in CompleteSchedule.PeakSchedule.Weeks[i].AdditionalInfo)
-                        {
-                            additionalInfo += worksheet.Cells[infoRow, CompleteSchedule.PeakSchedule.Column].Text;
-                            additionalInfo += "<br>";
-                        }
-                    }
 
                     List<Day> days = new List<Day>();
                     for (int j = 0; j < CompleteSchedule.PeakSchedule.Weeks[i].Days.Count; j++)
@@ -262,7 +230,6 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
 
                     week = new WeekBuilder()
                         .SetWeekNumber($"Неделя {WeekNumber}")
-                        .SetAdditionalInfo(additionalInfo)
                         .SetDays(days)
                         .Build();
 
@@ -281,17 +248,7 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
                 Week week;
                 for (int i = 0; i < ProgramPhases.TaperPhaseWeeks; i++)
                 {
-                    string additionalInfo = null;
                     string trainig = null;
-                    bool isAdditionalInfo = CompleteSchedule.TaperSchedule.Weeks[i].AdditionalInfo != null;
-                    if (isAdditionalInfo)
-                    {
-                        foreach (int infoRow in CompleteSchedule.TaperSchedule.Weeks[i].AdditionalInfo)
-                        {
-                            additionalInfo += worksheet.Cells[infoRow, CompleteSchedule.TaperSchedule.Column].Text;
-                            additionalInfo += "<br>";
-                        }
-                    }
 
                     List<Day> days = new List<Day>();
                     for (int j = 0; j < CompleteSchedule.TaperSchedule.Weeks[i].Days.Count; j++)
@@ -313,7 +270,6 @@ namespace StepByStepToAnEasyJog.ProgramBuilder
 
                     week = new WeekBuilder()
                         .SetWeekNumber($"Неделя {WeekNumber}")
-                        .SetAdditionalInfo(additionalInfo)
                         .SetDays(days)
                         .Build();
 

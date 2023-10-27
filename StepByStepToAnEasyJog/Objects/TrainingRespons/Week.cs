@@ -5,7 +5,5 @@
         public string WeekNumber { get; set; }
 
         public List<Day> Days { get; set; }
-
-        public string? AdditionalInfo { get; set; }
     }
 }

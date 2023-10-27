@@ -4,7 +4,6 @@
   "weeks": [
     {
       "weekNumber": 1,
-      "additionalInfo": [ 327 ],
       "days": [
         {
           "dayNumber": 318,
@@ -16,13 +15,12 @@
         },
         {
           "dayNumber": 325,
-          "trainingDescription": [ 326 ]
+          "trainingDescription": [ 326, 327 ]
         }
       ]
     },
     {
       "weekNumber": 2,
-      "additionalInfo": [ 348 ],
       "days": [
         {
           "dayNumber": 331,
@@ -38,13 +36,12 @@
         },
         {
           "dayNumber": 346,
-          "trainingDescription": [ 347 ]
+          "trainingDescription": [ 347, 348 ]
         }
       ]
     },
     {
       "weekNumber": 3,
-      "additionalInfo": [ 361 ],
       "days": [
         {
           "dayNumber": 352,
@@ -62,7 +59,6 @@
     },
     {
       "weekNumber": 4,
-      "additionalInfo": [ 376 ],
       "days": [
         {
           "dayNumber": 365,
@@ -74,13 +70,12 @@
         },
         {
           "dayNumber": 374,
-          "trainingDescription": [ 375 ]
+          "trainingDescription": [ 375, 376 ]
         }
       ]
     },
     {
       "weekNumber": 5,
-      "additionalInfo": [ 394 ],
       "days": [
         {
           "dayNumber": 380,
@@ -96,7 +91,7 @@
         },
         {
           "dayNumber": 392,
-          "trainingDescription": [ 393 ]
+          "trainingDescription": [ 393, 394 ]
         }
       ]
     },

@@ -1,5 +1,4 @@
-﻿using OfficeOpenXml.FormulaParsing.Excel.Functions.DateTime;
-using StepByStepToAnEasyJog.Objects.TrainingRespons;
+﻿using StepByStepToAnEasyJog.Objects.TrainingRespons;
 
 namespace StepByStepToAnEasyJog.Objects.ObjectsBuilders
 {
@@ -7,7 +6,7 @@ namespace StepByStepToAnEasyJog.Objects.ObjectsBuilders
     {
         private string weekNumber;
         private List<Day> days;
-        private string additionalInfo;
+        private string disclaimer;
 
         public WeekBuilder SetWeekNumber(string weekNumber)
         {
@@ -21,19 +20,17 @@ namespace StepByStepToAnEasyJog.Objects.ObjectsBuilders
             return this;
         }
 
-        public WeekBuilder SetAdditionalInfo(string additionalInfo)
+        public WeekBuilder SetDisclaimer(string disclaimer)
         {
-            this.additionalInfo = additionalInfo;
+            this.disclaimer = disclaimer;
             return this;
         }
-
         public Week Build()
         {
             return new Week
             {
                 WeekNumber = weekNumber,
-                Days = days,
-                AdditionalInfo = additionalInfo
+                Days = days
             };
         }
     }
