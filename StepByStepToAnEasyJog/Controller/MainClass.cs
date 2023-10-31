@@ -36,7 +36,7 @@
                     app.UseDeveloperExceptionPage();
                 }
                 app.UseCors("AllowAllOrigins");
-                //app.UseHttpsRedirection();
+                app.UseHttpsRedirection();
                 app.UseRouting();
                 app.UseAuthorization();
                 app.UseDefaultFiles();
